@@ -5,6 +5,7 @@ import { RoboInflacaoIPCA } from './api/services/inflation_ipca';
 
 const routes = new Router();
 
+routes.get("/", (req, res) => res.json("Servidor funcionando com sucesso"));
 routes.get("/taxa-cdi", RoboTaxaCDI);
 routes.get("/dolar", RoboDolar);
 routes.get("/inflacao", RoboInflacaoIPCA);
